@@ -37,3 +37,8 @@ while True:
   if cv2.waitKey(20) & 0xFF == ord('q'):
     break
 
+  # should display video live, but only do facial detection at some inteval, say 1/10s
+  # and then do some basic filtering (perhaps) to establish faces then do facial recognition
+  # on prominent / longer standing faces 1-3 times / s depending on how long it takes.
+  #time.sleep(0.33)
+
